@@ -1,0 +1,327 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Primus Green Finance - Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js">
+  </script>
+ </head>
+ <body class="bg-gradient-to-r from-green-400 to-blue-500 font-roboto min-h-screen flex flex-col">
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+     <img alt="Optimus Prime Matrix of Leadership" class="h-10 w-10" height="40" src="https://storage.googleapis.com/a1aa/image/WfjKe3D1OPtpQU3ps6MPxiiy7SZ4Or2d56fjAnM9OGOAfLJQB.jpg" width="40"/>
+     <a class="text-2xl font-bold text-indigo-600" href="/">
+      Primus Green Finance
+     </a>
+    </div>
+    <div class="space-x-4">
+     <a class="text-gray-700 hover:text-indigo-600" href="/upload">
+      Upload PDF
+     </a>
+     <a class="text-gray-700 hover:text-indigo-600" href="/dashboard">
+      Dashboard
+     </a>
+    </div>
+   </div>
+  </nav>
+  <div class="container mx-auto p-4 mt-8 flex-grow">
+   <div class="bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-3xl font-bold mb-6 text-indigo-600">
+     Top 10 Project
+    </h1>
+    <div id="dashboard">
+     <table class="min-w-full bg-white mb-6">
+      <thead>
+       <tr>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Rank
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Project Name
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Investment Amount
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         ROI
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         ESG Score
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Risk Status
+        </th>
+        <th class="py-2 px-4 border-b-2 border-gray-300 text-left leading-tight">
+         Project Duration
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         1
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+          Energy Project
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $1,000,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         10%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         85
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Low
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         5 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Sustainable Urban Development
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $900,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         9%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         80
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Medium
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         4 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         3
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+          Water Conservation
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $850,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         8.5%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         78
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         High
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         3 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         4
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project D
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $800,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         8%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         75
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Low
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         6 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         5
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project E
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $750,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         7.5%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         70
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Medium
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         5 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         6
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project F
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $700,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         7%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         68
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         High
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         4 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         7
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project G
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $650,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         6.5%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         65
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Low
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         3 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         8
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project H
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $600,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         6%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         60
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Medium
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2 years
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         9
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project I
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $550,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         5.5%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         55
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         High
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         1 year
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2 px-4 border-b border-gray-300">
+         10
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Project J
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         $500,000
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         5%
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         50
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         Low
+        </td>
+        <td class="py-2 px-4 border-b border-gray-300">
+         2 years
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <!-- Display Graphs -->
+     <div id="graphs">
+      <div class="mb-6" id="investment-graph">
+      </div>
+      <div class="mb-6" id="roi-graph">
+      </div>
+      <div class="mb-6" id="esg-graph">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="bg-white shadow-md mt-8">
+   <div class="container mx-auto p-4 text-center text-gray-700">
+    © 2023 Primus Green Finance. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Render the graphs using Plotly.js with data from the uploaded CSV
+    var investmentData = {{ investment_data | tojson }};
+    var roiData = {{ roi_data | tojson }};
+    var esgData = {{ esg_data | tojson }};
+
+    Plotly.newPlot('investment-graph', investmentData);
+    Plotly.newPlot('roi-graph', roiData);
+    Plotly.newPlot('esg-graph', esgData);
+  </script>
+ </body>
+</html>
