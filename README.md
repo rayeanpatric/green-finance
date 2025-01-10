@@ -11,7 +11,7 @@ The **Green Finance Optimization Platform** is designed to enhance Environmental
   - **Model Link**: [FinBERT-ESG on Hugging Face](https://huggingface.co/yiyanghkust/finbert-esg)
 
 - **Llama-3.2-1B-Instruct-IQ3_M**: A transformer-based model utilized for answering specific questions and extracting insights from text data.
-  - **Model Path**: `llama3.2.1B.gguf`
+  - **Model Path**: [Llama-3.2-1B-Instruct-IQ3_M.gguf](https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/blob/main/Llama-3.2-1B-Instruct-IQ3_M.gguf)
 
 ---
 
